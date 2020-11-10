@@ -3,3 +3,4 @@
 """The OCF Kubernetes configuration"""
 import core.cilium
 import core.local_path_provisioner
+import core.traefik
