@@ -58,6 +58,9 @@ local_path_provisioner = Chart(
                 "node": "DEFAULT_PATH_FOR_NON_LISTED_NODES",
                 "paths": [local_path_storage],
             }],
+            "storageClass": {
+                "defaultClass": True,
+            },
         },
     )
 )
