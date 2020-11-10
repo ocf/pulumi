@@ -30,6 +30,10 @@ prometheus = Chart(
                     "hosts": ["prometheus.dev-k8s.ocf.berkeley.edu"],
                 }
             },
+            # Conflicts w/ nodeExporter installed from Puppet.
+            "nodeExporter": {
+                "enabled": False,
+            }
         },
     ),
 )
